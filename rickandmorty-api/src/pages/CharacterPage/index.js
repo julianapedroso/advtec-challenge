@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BASE_URL, CHARACTER } from '../../services/api';
 import SemanticCard from '../../components/SemanticCard';
-import { Image } from 'semantic-ui-react';
 import { ContainerCard } from './styles';
 import Header from '../Header';
 
