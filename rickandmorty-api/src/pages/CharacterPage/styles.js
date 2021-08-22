@@ -5,6 +5,10 @@ export const ContainerCard = styled.div`
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 5rem;
+  margin: 1rem 5rem;
   padding: 2rem;
+
+  /* height: 100vh; */
+  
+  /* background-repeat: no-repeat; */
 `
