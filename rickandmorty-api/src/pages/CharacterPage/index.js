@@ -3,7 +3,6 @@ import { getCharacters } from '../../services/characters';
 import SemanticCard from '../../components/SemanticCard';
 import { ContainerCard } from './styles';
 import Pagination from '../../components/Pagination';
-import Header from '../Header';
 import Loading from '../../components/Loading';
 
 const CharacterPage = () => {
@@ -31,15 +30,12 @@ const CharacterPage = () => {
   };
 
   return (
-    <div>
-      <Header />
+    <main>
       <Pagination
         totalPages={pageState.info.pages}
         onPageChange={onPageChange}
       />
-      <Loading
-        show={loading}
-      />
+      <Loading show={loading} />
       <ContainerCard>
         {pageState.characters.map((character) => {
           return (
@@ -57,7 +53,7 @@ const CharacterPage = () => {
           );
         })}
       </ContainerCard>
-    </div>
+    </main>
   );
 };
 

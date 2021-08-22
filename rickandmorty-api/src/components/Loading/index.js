@@ -1,6 +1,7 @@
 import React from 'react';
-import { Loader } from 'semantic-ui-react';
+import { Loader, Image } from 'semantic-ui-react';
 import { LoadingContainer } from './styles';
+import ImageLoading from '../../assets/loading.gif';
 
 const Loading = ({ show }) => {
   if (!show) {
@@ -8,7 +9,9 @@ const Loading = ({ show }) => {
   }
   return (
     <LoadingContainer>
-      <Loader>Loading</Loader>
+      <Loader>
+        <Image src={ImageLoading} alt='GIF loading' />
+      </Loader>
     </LoadingContainer>
   );
 };

@@ -7,8 +7,4 @@ export const ContainerCard = styled.div`
   justify-content: space-between;
   margin: 1rem 5rem;
   padding: 2rem;
-
-  /* height: 100vh; */
-  
-  /* background-repeat: no-repeat; */
 `

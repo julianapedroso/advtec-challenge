@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Icon, Image } from 'semantic-ui-react';
+import { Card, Image } from 'semantic-ui-react';
 import {
   SimpleCard,
   CardHeader,
@@ -12,24 +12,26 @@ import {
 } from './styles';
 
 const SemanticCard = (props) => (
-  <>
+  <main>
     <SimpleCard>
-      <Image src={props.image} wrapped ui={false} />
+      <Image src={props.image} wrapped ui={false} alt='Rick and Morty character avatar' />
       <Card.Content>
-        <CardHeader>#{props.id} {props.name}</CardHeader>
+        <CardHeader>
+          #{props.id} {props.name}
+        </CardHeader>
         <ContainerButton>
           <GenderButton>{props.gender}</GenderButton>
           <StatusButton>{props.status}</StatusButton>
         </ContainerButton>
-        <Meta>{props.species} | Apparitions: {props.episodes}</Meta>
+        <Meta>
+          {props.species} | Apparitions: {props.episodes}
+        </Meta>
       </Card.Content>
       <CardLabel extra>Last known location:</CardLabel>
       <CardContent extra>🌍 {props.location}</CardContent>
-      <CardContent><p></p></CardContent>
-
       <br />
     </SimpleCard>
-  </>
+  </main>
 );
 
 export default SemanticCard;

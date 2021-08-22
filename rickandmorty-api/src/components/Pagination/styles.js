@@ -3,8 +3,7 @@ import { Pagination as SemanticPagination } from 'semantic-ui-react';
 
 export const Pagination = styled(SemanticPagination)`
   display: flex;
-  flex: 1;
-  background: #fff;
+  justify-content: center;
 
   &.ui.pagination.menu {
     margin: 0;
@@ -17,7 +16,13 @@ export const Pagination = styled(SemanticPagination)`
   &.ui.pagination.menu .item {
     max-width: 3em;
     text-align: center;
-}
+
+    &:hover {
+      cursor: pointer;
+      background: #6a47ad;
+      color: #fff;
+    }
+  }
 
   &.ui.menu:last-child {
     margin-bottom: 0;
@@ -32,18 +37,19 @@ export const Pagination = styled(SemanticPagination)`
     display: -ms-flexbox;
     display: flex;
     margin: 1rem 0;
+    width: 100%;
     font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    background: #fff;
     font-weight: 400;
-    border: 1px solid rgba(34, 36, 38, 0.15);
-    -webkit-box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
-    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
     border-radius: 0.28571429rem;
     min-height: 2.85714286em;
   }
 
   &.ui.menu > .item:first-child {
     border-radius: 0.28571429rem 0 0 0.28571429rem;
+  }
+
+  &.ui.menu > .item:last-child {
+    border-radius: 0 0.28571429rem 0.28571429rem 0;
   }
 
   &.ui.menu:not(.vertical) .item {
@@ -92,9 +98,12 @@ export const Pagination = styled(SemanticPagination)`
     background: rgba(34, 36, 38, 0.1);
   }
 
-  & a.item:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.03);
-    color: rgba(0, 0, 0, 0.95);
+  &.ui.pagination.menu .item {
+    background: #cddc39;
+    color: #4839dc;
+    font-weight: bold;
+    border: 1px solid #fff;
+    box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
+    -webkit-box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
   }
 `;

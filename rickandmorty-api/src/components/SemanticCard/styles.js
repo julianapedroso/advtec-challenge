@@ -10,6 +10,11 @@ export const SimpleCard = styled(Card)`
   margin: 2rem 0.4rem;
   border: 2px solid #6d47ad;
 
+  & div.image {
+    display: flex;
+    justify-content: center;
+  }
+
   img {
     border-radius: 10px 10px 0 0;
   }
@@ -31,17 +36,6 @@ export const CardHeader = styled(Card.Header)`
     color: #6d47ad;
   }
 `;
-
-export const Meta = styled(Card.Meta)`
-  color: #1cb5e0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-`;
-
-export const CardLabel = styled(Card.Content)`
-  color: #fff;
-`
 
 export const ContainerButton = styled.div`
   display: flex;
@@ -74,7 +68,18 @@ export const StatusButton = styled(Button)`
   border-radius: 3px;
 `;
 
+export const Meta = styled(Card.Meta)`
+  color: #1cb5e0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+`;
+
+export const CardLabel = styled(Card.Content)`
+  color: #fff;
+`;
+
 export const CardContent = styled(Card.Content)`
   color: #f2903e;
   font-weight: bold;
-`
+`;
