@@ -23,13 +23,18 @@ export const SimpleCard = styled(Card)`
 export const CardHeader = styled(Card.Header)`
   display: flex;
   justify-content: space-between;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0.5rem 0;
+
+  span {
+    color: #6d47ad;
+  }
 `;
 
 export const Meta = styled(Card.Meta)`
   color: #1cb5e0;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: 0.5rem 0;
 `;
@@ -46,8 +51,11 @@ export const ContainerButton = styled.div`
 export const GenderButton = styled(Button)`
   background: #4839dc;
   color: #fff;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: bold;
+  height: 3vh;
+  width: 30%;
   margin-right: 0.5rem;
   border: none;
   border-radius: 3px;
@@ -57,7 +65,10 @@ export const StatusButton = styled(Button)`
   background: #cddc39;
   color: #4839dc;
   text-transform: uppercase;
+  font-size: 0.9rem;
   font-weight: bold;
+  height: 3vh;
+  width: 30%;
   margin-right: 0.5rem;
   border: none;
   border-radius: 3px;
