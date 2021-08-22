@@ -44,14 +44,15 @@ const CharacterPage = () => {
         {characterList.map((character) => {
           return (
             <SemanticCard
-              itemsPerRow={4}
               id={character.id}
-              name={character.name}
               image={character.image}
+              name={character.name}
+              gender={character.gender}
               status={character.status}
               species={character.species}
               type={character.type}
               location={character.location.name}
+              episodes={character.episode.length}
             ></SemanticCard>
           );
         })}
