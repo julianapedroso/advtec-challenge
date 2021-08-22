@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { BASE_URL, CHARACTER } from '../../services/api';
 import SemanticCard from '../../components/SemanticCard';
-import { Header } from 'semantic-ui-react';
+import { ContainerCard } from './styles';
+import Header from '../../components/Header';
 
 const CharacterPage = () => {
   const [characterList, setCharacterList] = useState([]);
@@ -37,22 +38,23 @@ const CharacterPage = () => {
 
   return (
     <div>
-      <Header as='h1' align='center'>
-        Rick N Morty:
-      </Header>
-      {characterList.map((character) => {
-        return (
-          <SemanticCard
-            id={character.id}
-            name={character.name}
-            image={character.image}
-            status={character.status}
-            species={character.species}
-            type={character.type}
-            location={character.location.name}
-          ></SemanticCard>
-        );
-      })}
+      <Header />
+      <ContainerCard>
+        {characterList.map((character) => {
+          return (
+            <SemanticCard
+              itemsPerRow={4}
+              id={character.id}
+              name={character.name}
+              image={character.image}
+              status={character.status}
+              species={character.species}
+              type={character.type}
+              location={character.location.name}
+            ></SemanticCard>
+          );
+        })}
+      </ContainerCard>
     </div>
   );
 };

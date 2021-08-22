@@ -1,26 +1,29 @@
-import React from "react";
-import { Card, Icon, Image } from "semantic-ui-react";
+import React from 'react';
+import { Card, Icon, Image } from 'semantic-ui-react';
+import { SimpleCard, CardHeader, CardSpan } from './styles';
 
 const SemanticCard = (props) => (
-  <Card>
-    <Image src={props.image} wrapped ui={false} />
-    <Card.Content>
-      <Card.Header>{props.name}</Card.Header>
-      <Card.Meta>
-        <span>{props.species} | {props.status}</span>
-      </Card.Meta>
-      <Card.Description>
-        Matthew is a musician living in Nashville.
-      </Card.Description>
-    </Card.Content>
-    <Card.Content extra>
-      <a>
-        <Icon name="#" />
-        {props.location}
-      </a>
-    </Card.Content>
-    <br />
-  </Card>
+  <>
+    <SimpleCard>
+      <Image src={props.image} wrapped ui={true} />
+      <Card.Content>
+        <CardHeader>{props.name}</CardHeader>
+        <CardSpan>
+          <span>
+            {props.species} - {props.status}
+          </span>
+        </CardSpan>
+      
+      </Card.Content>
+      <Card.Content extra>
+        <a>
+          <Icon name='#' />
+          {props.location}
+        </a>
+      </Card.Content>
+      <br />
+    </SimpleCard>
+  </>
 );
 
 export default SemanticCard;

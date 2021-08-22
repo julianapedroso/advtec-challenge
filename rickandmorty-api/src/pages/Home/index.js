@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
+import { Wrapper } from '../../components/Header/styles';
 // import CharacterListPage from "../../components/CharacterList";
 // import SemanticCard from "../../components/SemanticCard";
-import CharacterPage from "../CharacterPage";
+import CharacterPage from '../CharacterPage';
 
 const Home = () => {
   return (
     <>
-      {/* <SemanticCard /> */}
       <CharacterPage />
     </>
   );
