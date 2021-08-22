@@ -1,3 +1,8 @@
-export const BASE_URL = 'https://rickandmortyapi.com/api/';
-export const CHARACTER = 'character/?page=4';
-export const CHARACTER_ID = ':characterId'; 
+import axios from 'axios';
+import { BASE_URL } from './constants';
+
+const axiosInstance = axios.create({
+  baseURL: BASE_URL,
+});
+
+export default axiosInstance;

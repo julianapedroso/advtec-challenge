@@ -1,8 +1,17 @@
-import React from 'react'
-import {Pagination} from './styles';
+import React from 'react';
+import { Pagination as StyledPagination } from './styles';
 
-const Pagination = ({props, boundaryRange, defaultActivePage, ellipsisItem, firstItem, lastItem, siblingRange, totalPages }) => (
-  <SemanticPagination
+const Pagination = ({
+  boundaryRange,
+  defaultActivePage,
+  ellipsisItem,
+  firstItem,
+  lastItem,
+  siblingRange,
+  totalPages,
+  onPageChange,
+}) => (
+  <StyledPagination
     boundaryRange={boundaryRange}
     defaultActivePage={defaultActivePage}
     ellipsisItem={ellipsisItem}
@@ -10,7 +19,8 @@ const Pagination = ({props, boundaryRange, defaultActivePage, ellipsisItem, firs
     lastItem={lastItem}
     siblingRange={siblingRange}
     totalPages={totalPages}
+    onPageChange={onPageChange}
   />
-)
+);
 
 export default Pagination;
