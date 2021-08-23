@@ -1,4 +1,4 @@
-# Rick and Morty API 👽🌍
+# RICK AND MORTY API 👽🌍
 #### Desafio proposto pela empresa ADV Tecnologia para vaga de Desenvolvedor(a) Front-End.
 <br />
 
@@ -7,7 +7,7 @@
 </h2>
 
 ### ☁️ Deploy:
-
+https://juliana-rickandmortyapi.surge.sh/
 
 ### ✨ Funcionamento:
 - [x] Informações dos personagens:
