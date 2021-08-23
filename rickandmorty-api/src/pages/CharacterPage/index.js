@@ -12,7 +12,6 @@ const CharacterPage = () => {
     characters: [],
     currentPage: 1,
   });
-  const [search, setSearch] = useState('');
 
   useEffect(() => {
     getCharactersInformation();
@@ -28,10 +27,6 @@ const CharacterPage = () => {
   const onPageChange = (e, page) => {
     const { activePage } = page;
     setPageState({ ...pageState, currentPage: activePage });
-  };
-
-  const handleSearchInput = (e) => {
-    setSearch(e.target.value);
   };
 
   return (
@@ -50,6 +45,7 @@ const CharacterPage = () => {
               name={character.name}
               gender={character.gender}
               status={character.status}
+              origin={character.origin.name}
               species={character.species}
               type={character.type}
               location={character.location.name}

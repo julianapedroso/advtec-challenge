@@ -10,5 +10,6 @@ export const ContainerCard = styled.div`
 
   @media (min-width: 320px) and (max-width: 600px) {
     margin: 1rem 0;
+    justify-content: center;
   }
 `;

@@ -23,8 +23,10 @@ export const Pagination = styled(SemanticPagination)`
 
     &:hover {
       cursor: pointer;
-      background: #6a47ad;
+      background: #6d47ad;
+      transform: 400ms;
       color: #fff;
+      opacity: 0.9;
     }
   }
 
@@ -34,6 +36,12 @@ export const Pagination = styled(SemanticPagination)`
 
   &.ui.menu {
     font-size: 1rem;
+
+    @media (min-width: 299px) and (max-width: 800px) {
+      font-size: 0.5rem;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &.ui.menu {
@@ -103,10 +111,10 @@ export const Pagination = styled(SemanticPagination)`
   }
 
   &.ui.pagination.menu .item {
-    background: #cddc39;
+    background: #fff;
     color: #4839dc;
+    opacity: 0.8;
     font-weight: bold;
-    border: 1px solid #fff;
     box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
     -webkit-box-shadow: 0 1px 2px 0 rgb(34 36 38 / 15%);
   }

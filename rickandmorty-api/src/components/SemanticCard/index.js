@@ -14,7 +14,12 @@ import {
 const SemanticCard = (props) => (
   <main>
     <SimpleCard>
-      <Image src={props.image} wrapped ui={false} alt='Rick and Morty character avatar' />
+      <Image
+        src={props.image}
+        wrapped
+        ui={false}
+        alt='Rick and Morty character avatar'
+      />
       <Card.Content>
         <CardHeader>
           #{props.id} {props.name}
@@ -27,8 +32,10 @@ const SemanticCard = (props) => (
           {props.species} | Apparitions: {props.episodes}
         </Meta>
       </Card.Content>
+      <CardLabel extra>Origin:</CardLabel>
+      <CardContent extra>🌍 {props.origin}</CardContent>
       <CardLabel extra>Last known location:</CardLabel>
-      <CardContent extra>🌍 {props.location}</CardContent>
+      <CardContent extra>📌 {props.location}</CardContent>
       <br />
     </SimpleCard>
   </main>
