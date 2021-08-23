@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Rick and Morty API 👽🌍
+#### Desafio proposto pela empresa ADV Tecnologia para vaga de Desenvolvedor(a) Front-End.
+<br />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2 align='center'>
+<img src="https://www.mulheresgeeks.com.br/wp-content/uploads/2021/06/rick_n_morty_sinopse.jpeg" width="80%" margin="2rem" alt="Cover Rick and Morty"/>
+</h2>
 
-## Available Scripts
+### ☁️ Deploy:
+https://juliana-rickandmortyapi.surge.sh/
 
-In the project directory, you can run:
+### ✨ Funcionamento:
+- [x] Informações dos personagens:
+  - [x] Avatar
+  - [x] Nome
+  - [x] Gênero
+  - [x] Status
+  - [x] Espécie
+  - [x] Total de aparições
+  - [x] Origem
+  - [x] Localização
+- [x] Responsividade
 
-### `yarn start`
+### 💻 Tecnologias:
+As seguintes tecnologias foram usadas na construção do projeto:
+- React.js
+- Axios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🎨 Layout:
+- Styled-Componentes
+- Semantic-UI
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 📂 Como instalar o projeto:
 
-### `yarn test`
+```bash
+# Passo 1. Clone este repositório no terminal/cmd:
+$ git clone https://github.com/julianapedroso/advtec-challenge.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Passo 2. Acesse a pasta do projeto:
+$ cd rickandmorty-api
 
-### `yarn build`
+# Passo 3. Instale as dependências necessárias:
+$ npm install 
+or
+yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Passo 4. Execute a aplicação:
+$ npm run start
+or
+yarn start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Passo 5. Abra: http://localhost:3000 no seu navegador para ver a aplicação ✨
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 📷 Prints:
+#### Desktop:
+<img src="https://user-images.githubusercontent.com/68782453/130392617-0c728a42-c3e8-4418-ba25-38e865e03eb4.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/68782453/130392678-a5132f78-549e-4c7b-aa3f-b17dd826f788.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/68782453/130392725-fd7497ef-f2dc-4ea4-86ce-178bb21f1ebc.png" width="90%"></img> <img src="https://user-images.githubusercontent.com/68782453/130392783-c26644ef-49e5-4cbf-835d-56088b4891e5.png" width="90%"></img> 
 
-### `yarn eject`
+#### Mobile: 
+<img src="https://user-images.githubusercontent.com/68782453/130394243-a6687296-6c28-4b64-ac1f-73bf8fe13186.png" width="23%"></img> <img src="https://user-images.githubusercontent.com/68782453/130394294-6c9d28b8-7bcf-4fd7-b303-34e8f64ee628.png" width="23%"></img> <img src="https://user-images.githubusercontent.com/68782453/130394364-8357ad0d-b31c-435f-89ef-7ee41be5864b.png" width="23%"></img> <img src="https://user-images.githubusercontent.com/68782453/130393953-1dc7af3f-b208-45bc-b473-ce21b13f6d0a.png" width="23%"></img> 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Tablet:
+<img src="https://user-images.githubusercontent.com/68782453/130394498-44ab6867-bc3d-4011-ade6-d3aedc793045.png" width="23%"></img> <img src="https://user-images.githubusercontent.com/68782453/130394528-9513c059-91c6-4980-afc0-3a0a906721f3.png" width="23%"></img> <img src="https://user-images.githubusercontent.com/68782453/130394573-7ca746f7-fd9f-4a57-ba40-2916d6a34a8b.png" width="23%"></img> <img src="https://user-images.githubusercontent.com/68782453/130394600-5b87edd5-342e-49c8-bf30-01dc15873d0a.png" width="23%"></img> 
