@@ -7,11 +7,7 @@ const Header = () => {
   return (
     <header>
       <Wrapper>
-        <Image
-          src={Logo}
-          alt='Logo Rick and Morty'
-          title='Logo Rick and Morty'
-        />
+        <Image src={Logo} alt='Logo Rick and Morty' />
       </Wrapper>
     </header>
   );

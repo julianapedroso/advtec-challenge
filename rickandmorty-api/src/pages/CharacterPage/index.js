@@ -12,6 +12,7 @@ const CharacterPage = () => {
     characters: [],
     currentPage: 1,
   });
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     getCharactersInformation();
@@ -27,6 +28,10 @@ const CharacterPage = () => {
   const onPageChange = (e, page) => {
     const { activePage } = page;
     setPageState({ ...pageState, currentPage: activePage });
+  };
+
+  const handleSearchInput = (e) => {
+    setSearch(e.target.value);
   };
 
   return (

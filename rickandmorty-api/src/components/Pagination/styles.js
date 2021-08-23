@@ -5,8 +5,12 @@ export const Pagination = styled(SemanticPagination)`
   display: flex;
   justify-content: center;
 
+  @media (min-width: 299px) and (max-width: 800px) {
+    width: 50% !important;
+  }
+
   &.ui.pagination.menu {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;

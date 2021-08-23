@@ -10,6 +10,10 @@ export const SimpleCard = styled(Card)`
   margin: 2rem 0.4rem;
   border: 2px solid #6d47ad;
 
+  @media (min-width: 299px) and (max-width: 800px) {
+    margin: 1rem 0;
+  }
+
   & div.image {
     display: flex;
     justify-content: center;
